@@ -4,8 +4,9 @@ public class Email {
 
 	public static void main(String[] args) {
 		String regex="^[a-z]{3}";
-		String str="abc";
- System.out.println(str.matches(regex));
+		String regex1="@[a-zA-Z]{3,13}";
+		String str="@Bridgelabz";
+ System.out.println(str.matches(regex1));
 	}
 
 }
