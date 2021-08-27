@@ -3,9 +3,9 @@ package com.bridgelabz.email;
 public class Email {
 
 	public static void main(String[] args) {
-		String regex="^[a-z]{3}";
-		String regex1="@[a-zA-Z]{3,20}(.+)$";
-		String str="@Bridgelabz.co";
+		
+		String regex1="^[a-z]{3}(.+)[a-zA-z_+-]{0,8}@[a-zA-Z]{3,20}(.+)$";
+		String str="abc.xy_z@Bridgelabz.co";
        System.out.println(str.matches(regex1));
 	}
 
